@@ -3,26 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <title>Assignment 3</title>
+<script src="https://kit.fontawesome.com/b541b67be8.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">	
 </head>
 
 <body>
 	
-	<header>
+	<header><!-- would this just be a plain ole div insted of header then? -->
 		<div class="wrapper"><!-- not really sure where my wrapper is starting/ unless it is just a very wide wrapper? could I have 2 wrappers w/ diff widths? -->
 			<div class="row">
 				<div>
-					<h1><img src="img/brandblitz-logo.png" alt="brand-blitz" width="100"></h1> 
+					<img src="img/brandblitz-logo.png" alt="brand-blitz" width="100">
 				</div>
-				<nav> <!-- I want this nave to follow you through the whole page - is it okay if i make up the words for each nav since I can't read them? -->
-					<ul> <!-- is this even a nav tho? --> 
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
+				<nav> 
+					<ul> <!-- I really dont know what words to put into this nav -->
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -36,24 +40,25 @@
 			<div class="row">
 				<nav>
 					<ul>
-						<li><a href=""></a>Home</li>
-						<li><a href=""></a>About</li>
-						<li><a href=""></a>Shop</li>
-						<li><a href=""></a>Join</li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#shop">Shop</a></li>
+						<li><a href="#join">Join</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 		<header>
-			<h2><span>brandblitz presents</span><br>the huddle</h2> <!-- paint smear? -->
+			<p>brandblitz presents</p>
+			<h1>the huddle</h1> <!-- paint smear? -->
 		</header>
 	</section>
 				
 	<!-- --------------------------------------------------------------------- -->
 	
-	<div class="wrapper">
+	<div class="wrapper" id="home">
 		<header>
-			<h2>Join the huddle</h2>
+			<h2>Join the huddle</h2><!-- can an h1 & h2 be styled the same way? -->
 		</header>
 		<div class="row">
 			<div>
@@ -62,85 +67,207 @@
 			<div>
 				<p><a href="#" class="bttn-blue">Submit Important Form</a></p>
 				<form>
-				
-				</form> <!-- form goes here -->
-				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-				<p><a href="#" class="bttn-blue">Submit Important Form Again</a></p>
+					<fieldset><!-- make this stack but how tho? -->
+						<legend>Join the Huddle</legend> <!-- explicit -->
+							<label>Name: <!-- what shows in browser -->
+								<input type="text" name="first name" placeholder="Name"> 
+							</label>
+							<label>Eamil: <!-- what shows in browser -->
+								<input type="email" name="email" placeholder="Email"> 
+							</label>
+					</fieldset>
+					<p>volutpat.veniam Ut wisi enim ad minimvolutpat.veniam Ut wisi enim ad minim</p> <!-- would these p's belong inside the form or fieldset? -->
+					<p><a href="#" class="frm-bttn">I want to join!</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- --------------------------------------------------------------------- -->
+	<div><!-- gray rectangle -->
+	<div class="wrapper"> <!-- Not sure how to imput the bg rectangles -->
+			<div class="row">
+				<div>
+					<img src="img/email-polaroid.jpg" alt="" width="400">
+				</div>
+				<div>
+					<p>Here's whats included</p>
+				</div>
+				<div>
+					<header>
+						<h3>01. Brand Blitz Emails - pick a month</h3>
+					</header>
+					<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut </p>
+					<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut </p>
+				</div>
+				<div>
+					<img src="img/01-pic.png" alt="" width="100"> <!-- #1 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- --------------------------------------------------------------------- -->
+	<div><!-- gray rectangle all the way across-->
+		<div class="wrapper" id="about">
+			<div class="row">
+				<div>
+					<img src="img/02-pic.png" alt="" width="100">
+				</div>
+				<div>
+					<header>
+						<h3>resource library</h3>
+					</header>
+					<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl utvolutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
+					<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl utvolutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
+					<ul>
+						<li>volutpat. Ut wisi enim ad minim veniam,</li>
+						<li>volutpat. Ut wisi enim ad minim veniam,</li>
+						<li>volutpat. Ut wisi enim ad minim veniam,</li>
+						<li>volutpat. Ut wisi enim ad minim veniam,</li>
+					</ul>
+					<p>volutpat. Ut wisi enim ad minim veniam</p>
+				</div>
+				<div>
+					<img src="img/librarby-polaroid.png" alt="" width="480">
+				</div>
+			</div>
+		</div>
+	</div>	
+		
+	<!-- --------------------------------------------------------------------- -->
+
+	<div><!-- gray rectangle -->
+		<div class="wrapper" id="shop">
+			<div class="row">
+				<div>
+					<img src="img/discounts-polaroid.jpg" alt="" width="400">
+				</div>
+				<div>
+					<header>
+						<h3>Brand Blitz Shop discounts</h3>
+					</header>
+					<p>volutpat. Ut wisi enim ad minim veniam</p>
+					<p>volutpat. Ut wisi enim ad minim veniamvolutpat. Ut wisi enim ad minim veniamvolutpat. Ut wisi enim ad minim veniamvolutpat. Ut wisi enim ad minim veniamvolutpat. Ut wisi enim ad minim veniam</p>
+					<p>volutpat.veniam Ut wisi enim ad minim </p>
+				</div>
+				<div>
+					<img src="img/03-pic.png" alt="" width="100">
+				</div>
 			</div>
 		</div>
 	</div>
 	
 	<!-- --------------------------------------------------------------------- -->
 	
-	<section class="wrapper"> <!-- Not sure how to imput the bg rectangles -->
+	<div class="wrapper" id="join">
 		<div class="row">
 			<div>
 				<header>
-					<img><h2>Emails</h2> <!-- This makes sense to be the header for this section, would it be too complicated to make this sideways? -->
+					<h2>Join now!</h2>
 				</header>
-				<p>Here's whats included</p>
 			</div>
-			<div>
-				<header>
-					<h3>01. Brand Blitz Emails - pick a month</h3>
-				</header>
-				<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut </p>
-				<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut </p>
-			</div>
-			<div>
-				<img> <!-- #1 -->
-			</div>
-		</div>
-	</section>
-	
-		<!-- --------------------------------------------------------------------- -->
-
-	<section class="wrapper">
-		<div class="row">
-			<div>
-				<img><!-- #2 -->
 			
-				<header>
-					<img><h2>Resource library</h2>
-				</header>
-			</div>
-			<div>
-				<header>
-					<h3>02. Brand Blitz Library</h3>
-				</header>
-				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
+				<form>
+					<fieldset><!-- make this stack but how tho? -->
+						<legend>Join the Huddle</legend> <!-- explicit -->
+							<label>
+								Name: <!-- what shows in browser -->
+								<input type="text" name="first name" placeholder="Name"> 
+							</label>
+							<label>
+								Eamil: <!-- what shows in browser -->
+								<input type="email" name="email" placeholder="Email"> 
+							</label>
+					</fieldset>
+					<p>volutpat.veniam Ut wisi enim ad minimvolutpat.veniam Ut wisi enim ad minim</p>
+					<p><a href="#" class="frm-bttn">I want to join!</a></p>
+				</form>
+			
+		</div>
+	</div>
+	
+	<!-- --------------------------------------------------------------------- -->
+	
+	<footer><!-- apply bg color -->
+		<div class="wrapper"> 
+			<nav>
 				<ul>
-					<li>list Item one one</li>
-					<li>list Item one one</li>
-					<li>list Item one one</li>
-					<li>list Item one one</li>
+					<li><a href="#">Extras</a></li>
+					<li><a href="#">Pics</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Connect</a></li>
+					<li><a href="#">Blog</a></li>
 				</ul>
-				<p>Ut wisi enim ad</p>
+			</nav>
+			<div class="row">
+				<div>
+					<header>
+						<h2>Instagram love</h2>
+					</header>
+					<p><a href="#" class="bttn-blue">Follow us on insta</a></p><!-- link to insta -->
+				</div>
+				<div>
+					<img src="img/instagram-posts-II-footer.jpg" alt="" width="400">
+					<img src="img/instagram-posts-footer.jpg" alt="" width="400">
+				</div>
+			</div>
+			
+			<div>
+				<nav>
+					<ul>
+						<li><a href="#">Extras</a></li>
+						<li><a href="#">Pics</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Send a Pic</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
-	</section>
+	</footer>
+	
 	
 	<!-- --------------------------------------------------------------------- -->
+
 	
-	<section class="wrapper">
-		<div class="row">
-			<header>
-				<img><h2>Shop Discounts</h2>
-			</header>
-			<header>
-				<h3>03. Brand Blitz Shop Discounts</h3>
-			</header>
-			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
-			<img><!-- #3 -->
-		</div>
-	</section>
-	
-	<!-- --------------------------------------------------------------------- -->
-	
-	
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+			// Select all links with hashes
+	$('a[href*="#"]')
+	  // Remove links that don't actually link to anything
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+		// On-page links
+		if (
+		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		  && 
+		  location.hostname == this.hostname
+		) {
+		  // Figure out element to scroll to
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		  // Does a scroll target exist?
+		  if (target.length) {
+			// Only prevent default if animation is actually gonna happen
+			event.preventDefault();
+			$('html, body').animate({
+			  scrollTop: target.offset().top
+			}, 1000, function() {
+			  // Callback after animation
+			  // Must change focus!
+			  var $target = $(target);
+			  $target.focus();
+			  if ($target.is(":focus")) { // Checking if the target was focused
+				return false;
+			  } else {
+				$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+				$target.focus(); // Set focus again
+			  };
+			});
+		  }
+		}
+	  });
+	</script>
 </body>
 </html>
