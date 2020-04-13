@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">	
 </head>
@@ -16,87 +17,92 @@
 	<header><!-- would this just be a plain ole div insted of header then? -->
 		<div class="wrapper"><!-- not really sure where my wrapper is starting/ unless it is just a very wide wrapper? could I have 2 wrappers w/ diff widths? -->
 			<div class="row">
-				<div>
-					<img src="img/brandblitz-logo.png" alt="brand-blitz" width="100">
-				</div>
+				
+				<img src="img/brandblitz-logo.png" alt="brand-blitz" width="100">
+				
 				<nav> 
 					<ul> <!-- I really dont know what words to put into this nav -->
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
+						<li><a href="#">nav</a></li>
+						<li><a href="#">nav</a></li>
+						<li><a href="#">nav</a></li>
+						<li><a href="#">nav</a></li>
+						<li><a href="#">nav</a></li>
+						<li><a href="#">nav</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-	</header>
+	
 	
 	<!-- --------------------------------------------------------------------- -->
 	
-	<section id="hero-image">
-		<div class="wrapper">
-			<div class="row">
-				<nav>
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#shop">Shop</a></li>
-						<li><a href="#join">Join</a></li>
-					</ul>
-				</nav>
+		<div id="hero-image">
+			<div class="wrapper">
+				<div class="row">
+					<nav>
+						<ul>
+							<li><a href="#home">home</a></li>
+							<li><a href="#about">about</a></li>
+							<li><a href="#shop">shop</a></li>
+							<li><a href="#join">join</a></li>
+						</ul>
+					</nav>
+				</div>
+
+		
+				<p>brandblitz presents</p>
+				<h1>the huddle</h1> <!-- paint smear? -->
+			
 			</div>
 		</div>
-		<header>
-			<p>brandblitz presents</p>
-			<h1>the huddle</h1> <!-- paint smear? -->
-		</header>
-	</section>
-				
+	</header>			
 	<!-- --------------------------------------------------------------------- -->
 	
-	<div class="wrapper" id="home">
+	<section class="wrapper" id="home">
 		<header>
 			<h2>Join the huddle</h2><!-- can an h1 & h2 be styled the same way? -->
 		</header>
 		<div class="row">
-			<div>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut </p>
+			<div class="col-1">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut </p>
+				<p>elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+				
 			</div>
-			<div>
+			<div class="col-1">
 				<p><a href="#" class="bttn-blue">Submit Important Form</a></p>
 				<form>
 					<fieldset><!-- make this stack but how tho? -->
-						<legend>Join the Huddle</legend> <!-- explicit -->
-							<label>Name: <!-- what shows in browser -->
-								<input type="text" name="first name" placeholder="Name"> 
-							</label>
-							<label>Eamil: <!-- what shows in browser -->
-								<input type="email" name="email" placeholder="Email"> 
-							</label>
-					</fieldset>
+					<legend>Join the Huddle</legend> <!-- explicit -->
+					<label>Name:</label> <!-- what shows in browser -->
+					<input type="text" name="first name" placeholder="Name"> 
+
+					<label>Eamil:</label> <!-- what shows in browser -->
+					<input type="email" name="email" placeholder="Email"> 
+							
+					
 					<p>volutpat.veniam Ut wisi enim ad minimvolutpat.veniam Ut wisi enim ad minim</p> <!-- would these p's belong inside the form or fieldset? -->
-					<p><a href="#" class="frm-bttn">I want to join!</a></p>
+					<p><a href="#" class="frm-bttn animate-hover">I want to join!</a></p>
+					</fieldset>
 				</form>
 			</div>
 		</div>
-	</div>
+	</section>
 	
-	<!-- --------------------------------------------------------------------- -->
-	<div><!-- gray rectangle -->
-	<div class="wrapper"> <!-- Not sure how to imput the bg rectangles -->
+	<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="relative"></div>
+		<div class="gray-rec">
+	<div class="wrapper email"> <!-- Not sure how to imput the bg rectangles -->
+		<!-- gray rectangle -->
 			<div class="row">
-				<div>
+				<div class="col-2">
 					<img src="img/polaroid-email.jpg" alt="" width="400">
 				</div>
-				<div>
-					<p>Here's whats included</p>
+				<div class="col-2">
+					<p class="intro-text">Here's whats included</p>
 				
 				
-					<header>
-'						<h3>01. Brand Blitz Emails - pick a month</h3>
-'					</header>
+					
+					<p>01. brand blitz emails - pick a month</p>					
 					<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut </p>
 					<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut </p>
 				</div>
@@ -104,26 +110,28 @@
 					<img src="img/01-number.png" alt="" width="100"> <!-- #1 -->
 				
 			</div>
-		</div>
+			
+		
+	</div>
 	</div>
 	<!-- --------------------------------------------------------------------- -->
 	<section><!-- gray rectangle all the way across-->
 		<div class="wrapper row" id="about">
 			
-				
+				<div class="col-2">
 					<img src="img/02-number.png" alt="" width="100">
+				</div>
+				<div class="col-2">
 				
-				<div>
-					<header>
-						<h3>resource library</h3>
-					</header>
+					<p class="intro-text">02. resource library</p>
+				
 					<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl utvolutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
 					<p>volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl utvolutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
 					<ul>
-						<li>volutpat. Ut wisi enim ad minim veniam,</li>
-						<li>volutpat. Ut wisi enim ad minim veniam,</li>
-						<li>volutpat. Ut wisi enim ad minim veniam,</li>
-						<li>volutpat. Ut wisi enim ad minim veniam,</li>
+						<li>volutpat. Ut wisi enim ad minim</li>
+						<li>volutpat. Ut wisi enim ad minim</li>
+						<li>volutpat. Ut wisi enim ad minim</li>
+						<li>volutpat. Ut wisi enim ad minim</li>
 					</ul>
 					<p>volutpat. Ut wisi enim ad minim veniam</p>
 				</div>
@@ -139,20 +147,19 @@
 	<section><!-- gray rectangle -->
 		<div class="wrapper row" id="shop">
 			
-				
+				<div class="col-2">
 					<img src="img/polaroid-discounts.jpg" alt="" width="400">
+				</div> 
 			
-				<div>
-					<header>
-						<h3>Brand Blitz Shop discounts</h3>
-					</header>
+				<div class="col-2">
+					<p class="intro-text">03. brand blitz shop discounts</p>
 					<p>volutpat. Ut wisi enim ad minim veniam</p>
 					<p>volutpat. Ut wisi enim ad minim veniamvolutpat. Ut wisi enim ad minim veniamvolutpat. Ut wisi enim ad minim veniamvolutpat. Ut wisi enim ad minim veniamvolutpat. Ut wisi enim ad minim veniam</p>
 					<p>volutpat.veniam Ut wisi enim ad minim </p>
 				</div>
-				
+				<div>
 					<img src="img/03-number.png" alt="" width="100">
-				
+				</div>
 			
 		</div>
 	</section>
@@ -161,26 +168,23 @@
 	
 	<div class="wrapper" id="join">
 		<div class="row">
-			
-				<header>
-					<h2>Join now!</h2>
-				</header>
-			
-			
-				<form>
-					
+				<div class="col-1">
+					<header>
+						<h2>Join now!</h2>
+					</header>
+				</div>
+				<form class="col-2">
+				<fieldset><!-- make this stack but how tho? -->
 					<legend>Join the Huddle</legend> <!-- explicit -->
-						<label>
-						Name: <!-- what shows in browser -->
-						<input type="text" name="first name" placeholder="Name"> 
-						</label>
-						<label>
-						Eamil: <!-- what shows in browser -->
-						<input type="email" name="email" placeholder="Email"> 
-						</label>
-					
-					<p>volutpat.veniam Ut wisi enim ad minimvolutpat.veniam Ut wisi enim ad minim</p>
-					<p><a href="#" class="frm-bttn">I want to join!</a></p>
+					<label>Name:</label> <!-- what shows in browser -->
+					<input type="text" name="first name" placeholder="Name"> 
+
+					<label>Eamil:</label> <!-- what shows in browser -->
+					<input type="email" name="email" placeholder="Email"> 	
+
+					<p>volutpat.veniam Ut wisi enim ad minimvolutpat.veniam Ut wisi enim ad minim</p> <!-- would these p's belong inside the form or fieldset? -->
+					<p><a href="#" class="frm-bttn animate-hover">I want to join!</a></p>
+				</fieldset>
 				</form>
 			
 		</div>
@@ -188,41 +192,45 @@
 	
 	<!-- --------------------------------------------------------------------- -->
 	
-	<footer><!-- apply bg color -->
+	<footer  class="animate-hover"><!-- apply bg color -->
 		<div class="wrapper"> 
 			<nav>
 				<ul>
-					<li><a href="#">Extras</a></li>
-					<li><a href="#">Pics</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">Connect</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a href="#">extras</a></li>
+					<li><a href="#">pics</a></li>
+					<li><a href="#">products</a></li>
+					<li><a href="#">shop</a></li>
+					<li><a href="#">connect</a></li>
+					<li><a href="#">blog</a></li>
 				</ul>
 			</nav>
 			<div class="row">
-				<div>
-					<header>
-						<h2>Instagram love</h2>
-					</header>
+				<div class="col-2">
+					
+					<p>instagram love</p>
+					
 					<p><a href="#" class="bttn-blue">Follow us on insta</a></p><!-- link to insta -->
 				</div>
-				<div>
-					<img src="img/instagram-posts-II-footer.jpg" alt="" width="400">
-					<img src="img/instagram-posts-footer.jpg" alt="" width="400">
+				<div class="col-1">
+					<img src="img/instagram-posts-II-footer.jpg" alt="" width="225">
+					<img src="img/instagram-posts-footer.jpg" alt="" width="225">
+					<img src="img/instagram-posts-footer.jpg" alt="" width="225">
+					<img src="img/instagram-posts-II-footer.jpg" alt="" width="225">
 				</div>
 			</div>
 			
 			
 				<nav>
 					<ul>
-						<li><a href="#">Extras</a></li>
-						<li><a href="#">Pics</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Send a Pic</a></li>
+						<li><a href="#">extras</a></li>
+						<li><a href="#">pics</a></li>
+						<li><a href="#">products</a></li>
+						<li><a href="#">send a pic</a></li>
 					</ul>
 				</nav>
-			
+		<i class="fab fa-facebook"><a href="http://www.facebook.com" target="_blank"><span>facebook</span></a></i>	
+		<i class="fab fa-twitter"><a href="http://www.twitter.com" target="_blank"><span>twitter.com</span></a></i>
+		<i class="fab fa-tumblr-square"><a href="http://www.flikr.com" target="_blank"><span>tumblr.com</span></a></i>
 		</div>
 	</footer>
 	

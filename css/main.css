@@ -67,6 +67,8 @@
     overflow: auto;
 }
 
+
+
 /*--------------------------------------------------------------
 4.0 - Elements 
 -------------------------------------------------------------- */
@@ -77,34 +79,81 @@ fieldset {
 	border: none;
 }
 
+legend {
+	font-family: 'Roboto Slab', serif;
+	font-size: 20px;
+	padding: 20px;
+	margin: 0 auto;
+	width: 300px;
+}
+
+ label {
+	display: none;
+}
+
+input {
+	width: 300px;
+	margin: 10px;
+	display: block;
+}
+
+.col-1 .frm-bttn {
+	margin: 50px;
+	
+}
+
+
+/*
+.relative {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+*/
 /* ------------------------ LISTS -------------------------- */
+
+
 
 /* ------------------------ MEDIA -------------------------- */
 
-img[src="img/email-polaroid.jpg"]{     /* this is a total experimentaiton */
-	transform:rotate(-15deg);
+img[src="../img/polaroid-email.jpg"] {
+	transform: rotate(-25deg);
+}    /* this is a total experimentaiton */
+
+img[src="../img/01-number.png"] {
+	margin-top: 200px;
+
 }
+
+
+
+
 
 
 /* ------------------------ TABLES -------------------------- */
 
 /* ------------------------ TYPOGRAPHY -------------------------- */
 
-p {
+p, ul {
 	font-family: 'Overpass Mono', monospace; 
 }
 
-h2, #hero-image h1 {
+h2, #hero-image h1, footer p:first-child {
 	font-family: 'Cedarville Cursive', cursive;
 }
 
-h3 {
-	font-family: 'Overpass', sans-serif;
+h3, nav li, #hero-image header p {
+	font-family: 'Overpass', sans-serif; 
+	font-variant: small-caps;
+	
 }
        
 a {
 	text-decoration: none;
 }
+
+
+
 
 
 /*--------------------------------------------------------------
@@ -121,7 +170,7 @@ a {
 -------------------------------------------------------------- */
 
 #hero-image {
-	background: url("../img/hero-polaroid.jpg") no-repeat center;
+	background: url("../img/hero-living-room.jpg") no-repeat center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -130,6 +179,75 @@ a {
 }
 
 
+img[src="img/brandblitz-logo.png"] {
+	float: left;
+	width: 200px;
+	margin-top: 5px; /*this is not right*/
+	
+}
+
+.col-1 {
+	float: left;
+	width: 525px;
+	padding: 20px 30px;
+	margin-left: 50px;  /*first paragraphs*/
+	
+}
+
+.col-1 .bttn-blue {
+	margin: 0 50px;
+}
+
+.col-2 {
+	float: left;
+	width: 400px;
+	margin: 50px;
+}
+
+.col-2 p:first-child {
+	padding-bottom: 50px;
+}
+
+
+
+#about .col-2:first-child {
+	width: 90px;
+
+}
+
+#about {
+	padding: 50px 0;
+	
+}
+
+.intro-text {
+	font-family: 'Overpass', sans-serif;
+	font-variant: small-caps;
+	font-size: 20px;
+}
+
+#home {
+	padding: 50px 0;
+}
+
+
+#shop, #join, #about, #email {
+	padding-bottom: 100px;
+}
+
+#join header {
+	float: right;
+	width: 200px;
+}
+
+footer {
+	background-color: #E3E0DC;
+	padding: 20px 0;
+}
+
+span {
+	display: none;
+}
 
 /* ------------------------ BUTTONS -------------------------- */
 
@@ -142,15 +260,94 @@ a {
 	padding: 10px 20px
 }
 
+
 .frm-bttn {
-	padding: 5px 10px;	
+	padding: 5px 50px;	
 }
 
+a:hover {
+	color: #fff;
+}
+
+.animate-hover {
+   width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #4F4D4D;
+  }
+  100% {
+    background-color: #B3AFAF;
+  }
+}
 /* ------------------------ HEADER -------------------------- */
+
+h1 {
+	background: url("../img/paint-smear.png") no-repeat center;
+	background-size: 400px;
+	text-align: center;
+	font-size: 90px;
+	margin-top: -20px; /*Hero Image*/
+}
+
+#hero-image header p {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 50px;	
+}
+
+h2, footer p:first-child {
+	font-size: 50px; /*join the huddle*/
+	text-align: center;
+}
+
 
 
 /* ------------------------ NAVIGATION -------------------------- */
 
+nav li {
+	display: inline-block;
+}
+
+header nav li {
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+header nav { /*1st nav*/
+	float: left;
+	width: 800px;
+}
+
+#hero-image nav { /*2nd nav*/
+	float: right;
+	width: 500px;
+}
+
+#hero-image p {
+	text-align: center;
+}
+
+#hero-image nav a { /*bg color 2nd nav*/
+	background-color: #E0DFE1;
+	padding: 5px 30px;
+}
+
+
+footer nav {
+	text-align: center;
+}
+
+footer nav li {
+	margin-right: 20px;
+}
+
+footer .col-1 {
+	margin-top: 100px;
+}
 
 /*--------------------------------------------------------------
 7.0 - Utilities 
@@ -160,6 +357,11 @@ a {
 /* ------------------------ ALIGNMENT -------------------------- */
 
 /* ------------------------ COLOR -------------------------- */
+
+h1, h3, p, nav a, nav {
+color: #3C3C3C; /*gray*/
+}
+
 
 /* ------------------------ SIZE -------------------------- */
 
